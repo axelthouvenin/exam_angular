@@ -1,0 +1,26 @@
+<p>Détail du restaurant : {{restaurant?.id}}</p>
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Adresse</th>
+  </tr>
+  <tr>
+    <td>{{restaurant?.nom}}</td>
+    <td>{{restaurant?.adresse}}</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Evaluateur</th>
+    <th>Commentaire</th>
+    <th>Note</th>
+  </tr>
+  <tr *ngFor="let evaluation of evaluations">
+    <td>{{evaluation.evaluateur}}</td>
+    <td>{{evaluation.commentaire}}</td>
+    <td>{{evaluation.note}}</td>
+  </tr>
+</table>
+<button>Supprimer</button>
+
